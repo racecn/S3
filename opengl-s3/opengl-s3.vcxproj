@@ -105,7 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalUsingDirectories>C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Users\racec\Documents\libraries\include;C:\Users\racec\Documents\libraries\include\KHR;C:\Users\racec\Documents\libraries\include\glad;C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\racec\Documents\libraries\glm-1.0.1\glm;C:\Users\racec\Documents\libraries\include;C:\Users\racec\Documents\libraries\include\KHR;C:\Users\racec\Documents\libraries\include\glad;C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,7 +123,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalUsingDirectories>C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>C:\Users\racec\Documents\libraries\include;C:\Users\racec\Documents\libraries\include\KHR;C:\Users\racec\Documents\libraries\include\glad;C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\racec\Documents\libraries\glm-1.0.1\glm;C:\Users\racec\Documents\libraries\include;C:\Users\racec\Documents\libraries\include\KHR;C:\Users\racec\Documents\libraries\include\glad;C:\Users\racec\Documents\libraries\glfw-3.3.9.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +137,10 @@
   <ItemGroup>
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
